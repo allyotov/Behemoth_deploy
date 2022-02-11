@@ -1,0 +1,25 @@
+version: '3.7'
+services:
+  fb_handler:
+    image: allyotov/behemoth_fb_group_handler:1.0.0
+    networks:
+      - behemoth
+    env_file: .env
+
+  backend:
+    image: allyotov/behemoth_backend:1.0.0
+    networks:
+      - behemoth
+    env_file: .env
+    volumes:
+      - ./backend_data:/behemoth/
+      - ./baclend_data/db.sqlite3:behemoth/db.sqlite3
+
+  bot:
+    image: allyotov/behemoth_bot:1.0.0
+    networks:
+      - behemoth
+    env_file: .env
+
+networks:
+  behemoth:
