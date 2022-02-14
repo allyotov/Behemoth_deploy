@@ -7,13 +7,14 @@ services:
     env_file: .env
 
   backend:
-    image: allyotov/behemoth_backend:1.0.0
+    image: allyotov/behemoth_backend:1.0.3
     networks:
       - behemoth
     env_file: .env
+    ports:
+      - 8000:8000
     volumes:
-      - ./backend_data:/behemoth/
-      - ./baclend_data/db.sqlite3:behemoth/db.sqlite3
+      - ./backend_data:/behemoth_backend/behemoth_data
 
   bot:
     image: allyotov/behemoth_bot:1.0.0
