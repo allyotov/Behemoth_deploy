@@ -1,3 +1,4 @@
 /backend_data
+/baclend_data
 .env
 *.sqlite3
