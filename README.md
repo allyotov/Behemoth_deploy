@@ -45,7 +45,7 @@ make backend.logs
 
 посмотреть логи бота
 ```
-bot.logs
+make bot.logs
 ```
 
 посмотреть логи обработчика соцсети
