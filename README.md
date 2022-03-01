@@ -52,3 +52,9 @@ make bot.logs
 ```
 make fb_handler.logs
 ```
+
+## Другие репозитории проекта
+
+Обработчик сообщений соцсети: <https://github.com/allyotov/Behemoth_fb_group_handler>
+
+Телеграм-бот: <https://github.com/allyotov/Behemoth_bot>
