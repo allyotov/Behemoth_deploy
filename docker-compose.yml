@@ -17,7 +17,7 @@ services:
       - ./backend_data:/behemoth_backend/behemoth_data
 
   bot:
-    image: allyotov/behemoth_bot:1.0.0
+    image: allyotov/behemoth_bot:1.0.1
     networks:
       - behemoth
     env_file: .env
